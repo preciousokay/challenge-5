@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Precious Okeh Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+        }
+
+        #hero {
+            background-image: url('../images/header.png');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 300px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #calltoaction {
+            position: absolute;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        button {
+            background-color: brown;
+            border: 1px solid black;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: white;
+            border: 1px solid black;
+            color: brown;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .column {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        .column img {
+            height: 300px;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+        .column {
+            flex: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .column img {
+            width: 200px;
+            height: auto;
+        }
+
+        @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html"><img src="../images/haro.gif"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <img src="../images/icons.png">
+
+    </body>
+    </html>
